@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+html,
+body {
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.banner {
+    height: 200px;
+    border: 1px solid rgb(253, 198, 246);
+    background-color: rgb(253, 198, 246);
+    display: flex;
+}
+.banner__img {
+    width: 200px;
+}
+.job {
+    padding: 6px 92px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.job__title {
+    font-family: "Amatic SC", cursive;
+    font-size: 50px;
+    font-weight: 500;
+}
+.est {
+    text-align: right;
+}
+.vend {
+    text-align: center;
+}
+.side {
+    border: 1px solid black;
+    background-color: rgb(240, 214, 237);
+    width: 400px;
+    padding: 70px 50px 70px 50px;
+}
+.separator {
+    width: 150px;
+}
+.title {
+    text-align: center;
+    font-family: "Amatic SC", cursive;
+}
+.name {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Lato";
+}
+.text {
+    text-align: center;
+}
+.training_title {
+    text-align: center;
+    font-family: "Lato";
+    font-size: 15px;
+}
+.center {
+    border: 1px solid black;
+    width: 780px;
+    padding: 60px;
+}
+.part {
+    display: flex;
+}
+.about_title {
+    border: 1px solid rgb(240, 214, 237);
+    width: 300px;
+    margin: 30px auto;
+    background-color: rgb(240, 214, 237);
+}
+.about_title {
+    text-align: center;
+    font-family: "Amatic SC", cursive;
+}
+.exp {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.exp__img {
+    margin: 0px 30px;
+    width: 24px;
+}
+.exp__title {
+    text-align: center;
+    font-family: "Patrick Hand", cursive;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.exp_separator {
+    width: 528px;
+    color: rgb(151, 86, 160);
+    margin: 20px;
+}
+.exp__content {
+    max-width: 365px;
+}
+/* tablette */
+@media (max-width: 1180px) {
+    .container {
+        max-width: 980px;
+    }
+}
+/* telephone */
+@media (max-width: 500px) {
+    .banner {
+        height: auto;
+        flex-direction: column;
+    }
+    .banner__img {
+        margin: 50px auto;
+    }
+    .job {
+        padding: 0px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .part {
+        flex-direction: column;
+    }
+    .side {
+        padding: 30px 0px;
+        width: 100%;
+    }
+    .center {
+        width: 100%;
+        padding: 0px 0px 20px 0px;
+    }
+    .exp__img {
+        margin: 0px 10px;
+    }
+    .exp_separator {
+        width: 350px;
+        margin: 20px auto;
+    }
+    .exp__text:last-child {
+        margin-bottom: 0;
+    }
+}
